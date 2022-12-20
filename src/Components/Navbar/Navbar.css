@@ -1,0 +1,26 @@
+nav {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    z-index: 10;
+}
+
+nav .logo {
+    position: fixed;
+    left: 1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10;
+}
+
+nav .logo img {
+    width: 15rem;
+    height: 9rem;
+}
