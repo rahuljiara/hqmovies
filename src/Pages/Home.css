@@ -10,23 +10,24 @@
 
 .movies-card {
     position: relative;
-    height: 24rem;
+    height: 23rem;
     width: 20rem;
     margin: 1rem;
     background-color: white;
     border-radius: .6rem;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.297);
-    transition:.3s;
+    transition: .3s;
 
 }
-.movies-card:hover{
-   
-    transform:scale(1.05);
-    transition:.3s;
+
+.movies-card:hover {
+
+    transform: scale(1.05);
+    transition: .3s;
 }
 
 .movies-card .title {
-    height: 5rem;
+    min-height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,71 +39,47 @@
     font-size: 1.4rem;
     color: rgb(35, 35, 35);
 }
+
 .movies-card .title h3:hover {
 
-    color:rgb(255, 136, 0);
+    color: rgb(255, 136, 0);
 }
 
 
-.download-box {
-    height: 3.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 1rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
 
 a {
     text-decoration: none;
 }
 
-.download-box p,
-.download-btn {
-    width: 8rem;
-    height: 2.2rem;
-    border: 0;
-    outline: none;
-    color: white;
-    background: rgb(0, 42, 59);
-    border-radius: 5rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-}
 
- .movie-quality {
+.movie-badge-box {
+    width:100%;
     position: absolute;
     top: .5rem;
-    right: .5rem;
+    right: 0;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap:1rem;
+}
+.movie-badge{
     color: rgb(246, 255, 0);
     border: .1rem solid rgba(238, 255, 0, 0.322);
     background: black;
     padding: .5rem 1rem;
     border-radius: 5rem;
+    cursor: pointer;
 }
-
-.download-btn {
-    width: 3.5rem;
-    height: 3.5rem;
+.quality{
+    right: .5rem;
+    margin-right:.5rem;
 }
-.download-btn:hover {
-    background: rgb(5, 105, 0);
-}
-
-.download-btn i {
-    color: rgb(0, 235, 252);
-    font-size: 1.3rem;
-    transition: .1s;
-}
-
-.download-btn:hover i {
-    font-size: 1.5rem;
-    transition: .1s;
-    color: rgb(0, 252, 97);
+.industry{
+    left:.5rem;
+    margin-right:.5rem;
+    display: none;
 }
 
 img {
@@ -111,39 +88,21 @@ img {
     border-radius: .5rem .5rem 0 0;
 }
 
-/*  DEtail Of Movie On Hover */
-.hover-card-detail{
-    color:white;
-    position: absolute;
-    top:0;
-    height: 24rem;
-    width: 20rem;
-    background:rgba(0, 0, 0, 0.541);
-    backdrop-filter:blur(.5rem);
-    display: none;
-    z-index: 1000;
+.lang-box{
+    width:90%;
+    height:3rem;
+    margin:0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap:.4rem;
 }
-.hover-card-detail table {
-    align-items: center;
-    height:50%;
-    width:98%;
-    margin:0 1%;
-}
-.hover-card-detail table tr{
-    height:1rem;
-    /* background:red; */
-}
-.hover-card-detail table tr td{
-    width:70%;
-    padding:0 .5rem;
-}
-.hover-card-detail table tr th{
-    text-align: left;
-}
-img:hover .hover-card-detail{
-    display: block;
-    transition:.3s;
-
+.lang-box p{
+        font-size:1.3rem;
+        font-weight: bold;
+       color:grey;
+       text-transform: capitalize;
+       cursor: pointer;
 }
 
 @media screen and (max-width:1100px) {
@@ -172,10 +131,11 @@ img:hover .hover-card-detail{
 @media screen and (max-width:650px) {
     .movies-container {
         grid-template-columns: repeat(2, auto);
+        justify-content: center;
     }
 
     .movies-card {
-        margin: 1rem .5rem;
+        margin: 1rem;
     }
 }
 
@@ -193,62 +153,64 @@ img:hover .hover-card-detail{
         align-items: center;
         overflow: hidden;
     }
+    .movie-badge-box{
+        width:(100% - 13rem)
+    }
 
     img {
         HEIGHT: 13rem;
-        width:13rem;
+        width: 13rem;
         object-fit: cover;
-        border-radius:.5rem 0 0 .5rem;
+        border-radius: .5rem 0 0 .5rem;
     }
-    .movies-card-right{
+
+    .movies-card-right {
         position: relative;
-        bottom:0;
-        width:100%;
+        bottom: 0;
+        width: 100%;
         display: block;
-        margin-top:3rem;
-        height:calc(100% - 3rem);
+        margin-top: 3rem;
+        height: calc(100% - 3rem);
     }
 
     .movies-card .title {
         height: 4.8rem;
-        width:90%;  
-        margin:0 1rem;
-        text-align: center; 
-        margin-bottom:.5rem;
+        width: 90%;
+        margin: 0 1rem;
+        text-align: center;
+        margin-bottom: .5rem;
     }
-    .download-btn {
-        width: 80% ;
-        margin:0 10%;
-        padding:0 1rem;
-        height: 2.4rem;
+    .movie-badge-box {
+        width:calc(100% - 13rem);
+        justify-content: center;
     }
-    .download-btn i::after{
-        content:"Download";
-        margin-left:1rem;
-    }
-    .download-box p{
-        position: absolute;
-        top:-2.4rem;
-        left:1rem;
+    .industry{
+        left:.5rem;
+        margin-right:.5rem;
+        display:block;
     }
 }
+
 @media screen and (max-width:300px) {
-    .movies-card{
-   zoom:.8;
+    .movies-card {
+        zoom: .8;
     }
 }
+
 @media screen and (max-width:240px) {
-    .movies-card{
-   zoom:.6;
+    .movies-card {
+        zoom: .6;
     }
 }
+
 @media screen and (max-width:180px) {
-    .movies-card{
-   zoom:.3;
+    .movies-card {
+        zoom: .3;
     }
 }
+
 @media screen and (max-width:90px) {
-    .movies-card{
-   zoom:.2;
+    .movies-card {
+        zoom: .2;
     }
 }

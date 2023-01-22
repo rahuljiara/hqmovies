@@ -15,8 +15,9 @@ const movies = [
     //     quality:"1080p",
     //     year:"2022",
     //     uploadedYear :"2022",
-    //     discription:"", 
     //     genere: []
+    , //     discription:"", 
+    // size:'.59 gb',
     // },
     {
         id: "catbolly2022",
@@ -30,8 +31,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "bollywood", "Hindi", "Crime", "Thriller", "2022"],
+        size: "10.18 gb",
+        discription: "",
     },
     {
         id: "cabinetofcuriosities2022",
@@ -45,8 +47,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "hollywood", "Hindi-Eng", "Crime", "Thriller", "mistery", "Horror", "2022"],
+        size: "7.31 gb",
+        discription: "",
     },
     {
         id: "18992022",
@@ -60,8 +63,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "hollywood", "Hindi-Eng", "sci-fi", "Crime", "Thriller", "mistery", "2022"],
+        size: "11.34 gb",
+        discription: "",
     },
     {
         id: "aliceinborderland2020",
@@ -75,8 +79,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "japanese", "Hindi", "Sci-fi", "Action", "Crime", "Thriller", "mistery", "2020"],
+        size: "6.25 gb",
+        discription: "",
     },
     {
         id: "fauda2015",
@@ -90,8 +95,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "Israeli"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "Israeli", "Hindi-Israeli", "Crime", "Thriller", "2015"],
+        size: "12.62 gb",
+        discription: "",
     },
     {
         id: "fauda2017",
@@ -105,8 +111,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "Israeli"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "Israeli", "Hindi-Israeli", "Crime", "Thriller", "2017"],
+        size: "16.65 gb",
+        discription: "",
     },
     {
         id: "fauda2019",
@@ -120,8 +127,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "Israeli"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "Israeli", "Hindi-Israeli", "Crime", "Thriller", "2019"],
+        size: "9.21 gb",
+        discription: "",
     },
     {
         id: "doctorgbolly2022",
@@ -134,8 +142,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi"],
         type: "web series",
-        discription: "",
         genere: ["movie", "bollywood", "Hindi", "drama", "Comedy", "2022"],
+        size: "3.18 gb",
+        discription: "",
     },
     {
         id: "kantarabolly2022",
@@ -146,10 +155,11 @@ const movies = [
         quality: "4k",
         year: "2022",
         uploadedYear: "2022",
-        lang: ["Hindi","kannada","tamil","telgu"],
+        lang: ["Hindi", "kannada"],
         type: "web series",
+        genere: ["movie", "Karnataka", "Hindi-kanaada", "drama", "Action", "adventure", "thriller", "2022"],
+        size: "8.15 gb",
         discription: "",
-        genere: ["movie", "Karnataka", "Hindi-kanaada", "drama", "Action","adventure","thriller", "2022"],
     },
     {
         id: "thankgodbolly2022",
@@ -162,8 +172,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi"],
         type: "web series",
-        discription: "",
         genere: ["movie", "bollywood", "Hindi", "Fantasy", "Comedy", "2022"],
+        size: "6.22 gb",
+        discription: "",
     },
     {
         id: "peripheral2022",
@@ -177,8 +188,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
-        discription: "",
         genere: ["Web Series", "hollywood", "Hindi-Eng", "sci-fi", "action", "2022"],
+        size: "16.45 gb",
+        discription: "",
     },
     {
         id: "watcher2022",
@@ -192,8 +204,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "horror", "mistery", "drama", "2022"],
+        size:"6.76 gb",
         discription: "A married couple moving into their dream home are threatened by terrifying letters from a stalker, signed - The Watcher.",
-        genere: ["movie","Hollywood","hindi-eng","horror","mistery","drama","2022"]
     },
     {
         id: "warofworld2019",
@@ -207,8 +220,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "drama", "2019"],
+        size: "5.05 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","drama","2019"]
     },
     {
         id: "warofworld2021",
@@ -222,8 +236,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "drama", "2021"],
+        size: "5.62 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","drama","2021"]
     },
     {
         id: "warofworld2022",
@@ -237,8 +252,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "drama", "2022"],
+        size: "5.17 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","drama","2022"]
     },
     {
         id: "transformer2007",
@@ -251,8 +267,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "crime", "2007"],
+        size: "17.07 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","crime","2007"]
     },
     {
         id: "transformer2009",
@@ -265,8 +282,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "crime", "2009"],
+        size: "19.89 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","crime","2009"]
     },
     {
         id: "transformer2011",
@@ -279,8 +297,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "crime", "2011"],
+        size: "16.71 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","crime","2011"]
     },
     {
         id: "transformer2014",
@@ -293,8 +312,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "crime", "2014"],
+        size: "20.81 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","crime","2014"]
     },
     {
         id: "transformer2017",
@@ -307,8 +327,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "crime", "2017"],
+        size: "6.78 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","crime","2017"]
     },
     {
         id: "bumblebee2019",
@@ -321,8 +342,9 @@ const movies = [
         uploadedYear: "2022",
         lang: ["Hindi", "english"],
         type: "web series",
+        genere: ["movie", "Hollywood", "hindi-eng", "sci-fi", "action", "crime", "2019"],
+        size: "5.71 gb",
         discription: "",
-        genere: ["movie","Hollywood","hindi-eng","sci-fi","action","crime","2019"]
     },
 ]
 

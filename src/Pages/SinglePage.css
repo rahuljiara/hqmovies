@@ -68,6 +68,7 @@
 /* --------------------------------------------Image Section--------------------------------------------  */
 
 .detail-page-card-image {
+    position: relative;
     height: 38rem;
     width:100%;
     display: flex;
@@ -80,7 +81,31 @@
     width: 80rem;
     border-radius:.5rem;
 }
+.movie-size{
+    position: absolute;
+    top:2rem;
+    left:6rem;
+    height:3rem;
+    /* width:9rem; */
+    color:white;
+    padding:.5rem 1rem;
+    background:rgba(255, 255, 255, 0.156);
+    backdrop-filter:blur(.2rem);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border-top:.1rem solid rgba(255, 255, 255, 0.468);
+    border-left:.1rem solid rgba(255, 255, 255, 0.489);
+    box-shadow:0 0 2rem black;
+    text-shadow:-.1rem -.2rem .1rem rgb(0, 0, 0);
+}
 
+.movie-size >p{
+    margin-left:1rem;
+    font-weight: 100;
+    
+    text-shadow:-.1rem -.2rem .1rem black;
+}
 
 /* --------------------------------------------Disc Section--------------------------------------------  */
 .detail-page-card-disc {
@@ -153,12 +178,21 @@
         width: 90%;
 
     }
+    .movie-size{
+        top:1.5rem;
+        left:5rem;
+    }
 }
 
 @media screen and (max-width:500px){
     .detail-page-card-image >img {
         height: 35rem;
         width: 98%;
+    }
+    .movie-size{
+        top:3rem;
+        left:2rem;
+        font-size: 1.5rem;
     }
     .hr-line{
         width:80%;
@@ -179,6 +213,13 @@
     .detail-page-card-image >img {
         height: 100%;
         width: 98%;
+    }
+    .movie-size{
+        height:2rem;
+        top:0rem;
+        left:0; 
+        text-align: center;
+        font-size: 1rem;
     }
     .lang{
         font-size: 1.4rem;
@@ -210,6 +251,11 @@
     .detail-page-card-image >img {
         height: 100%;
         width: 98%;
+    }
+    .movie-size{
+        height:2rem;
+        text-align: center;
+        font-size: .5rem;
     }
     .lang{
         font-size: .9rem;

@@ -19,7 +19,7 @@ body::-webkit-scrollbar-track{
   height:1rem;
 }
 body::-webkit-scrollbar-thumb{
-  border-radius:5rem;
+  
 }
 
 * {

@@ -44,7 +44,7 @@ form button{
     border-radius:0 .5rem .5rem 0;
 }
 
-nav .logo img {
+nav .logo a > img {
     width: 15rem;
     height: 9rem;
 }
