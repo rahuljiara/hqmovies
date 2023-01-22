@@ -9,8 +9,16 @@ const Navbar = () => {
       <div className="logo">
         <img src="favicon.png" />
       </div>
+        <form>
+          <input type="text"
+                  placeholder="search movies ..."
+                  required
+                  
+                  />
+                  <button type="submit"><span>&#128269;</span></button>
+        </form>
      <div className="navlinks">
-  
+      
      </div>
      {/* <img src="https://cdn-icons-png.flaticon.com/512/2976/2976215.png"  id="nav-menu" onClick={navToggle}/> */}
     </nav>

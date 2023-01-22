@@ -1,11 +1,16 @@
 nav {
-    height: 4rem;
+    position:fixed;
+    top:-1rem;
+    left:0;
+    height: 6rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
     z-index: 10;
+    background:rgb(26, 26, 26);
+    /* background:rgb(245, 190, 190); */
 }
 
 nav .logo {
@@ -19,8 +24,96 @@ nav .logo {
     cursor: pointer;
     z-index: 10;
 }
+form{
+    height:3.5rem;
+    display:flex;   
+}
+form input{
+    height:100%;
+    width:25rem;
+    outline:none;
+    border:0;
+    border-radius:.5rem 0 0 .5rem;
+    padding-left:1rem;
+}
+form button{
+    height:100%;
+    width:3.5rem;
+    outline:none;
+    border:0;
+    border-radius:0 .5rem .5rem 0;
+}
 
 nav .logo img {
     width: 15rem;
     height: 9rem;
+}
+
+
+@media screen and (max-width:600px){
+    form{
+        position: absolute;
+        right:2rem;
+        justify-content: right;
+    }
+    form input{
+        width:15rem;
+    }
+    nav .logo img {
+        width: 10rem;
+        height: 7rem;
+    }
+
+}
+@media screen and (max-width:330px){
+    form input{
+        width:10rem;
+    }
+    nav .logo img {
+        width: 10rem;
+        height: 7rem;
+    }
+
+}
+@media screen and (max-width:270px){
+    form{
+        right:1rem;
+    }
+    form input{
+        width:5rem;
+    }
+    form button{
+        width:2.5rem;
+    }
+    nav .logo {
+        left:-1rem; 
+
+    }
+    nav .logo img {
+        width: 8rem;
+        height: 5rem;
+    }
+
+}
+@media screen and (max-width:180px){
+nav{
+    zoom:.5;    
+}
+form input{
+    width:10rem;
+}
+form button{
+    width:3rem;
+}
+
+}
+@media screen and (max-width:115px){
+nav{
+    zoom:.5;    
+}
+form {
+   display:none;
+}
+
+
 }
