@@ -12,7 +12,7 @@
 
 .detail-page-container {
     width: 100%;
-    height:calc(100vh - 6rem);
+    height:100vh;
     position: absolute;
     top: 6rem;
     display: flex;
@@ -30,7 +30,7 @@
 .detail-page-card-genere {
     height: 4rem;
     width: calc(100% - 2rem);
-    margin:.5rem 1rem;
+    margin: .5rem 1rem;
 }
 
 .genere-card {
@@ -70,205 +70,238 @@
 .detail-page-card-image {
     position: relative;
     height: 38rem;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.detail-page-card-image >img {
+.detail-page-card-image>img {
     height: 37rem;
     width: 80rem;
-    border-radius:.5rem;
+    border-radius: .5rem;
 }
-.movie-size{
+
+.movie-size {
     position: absolute;
-    top:2rem;
-    left:6rem;
-    height:3rem;
+    top: 2rem;
+    left: 6rem;
+    height: 3rem;
     /* width:9rem; */
-    color:white;
-    padding:.5rem 1rem;
-    background:rgba(255, 255, 255, 0.156);
-    backdrop-filter:blur(.2rem);
+    color: white;
+    padding: .5rem 1rem;
+    background: rgba(255, 255, 255, 0.156);
+    backdrop-filter: blur(.2rem);
     font-size: 2rem;
     font-weight: bold;
     border-radius: .5rem;
-    border-top:.1rem solid rgba(255, 255, 255, 0.468);
-    border-left:.1rem solid rgba(255, 255, 255, 0.489);
-    box-shadow:0 0 2rem black;
-    text-shadow:-.1rem -.2rem .1rem rgb(0, 0, 0);
+    border-top: .1rem solid rgba(255, 255, 255, 0.468);
+    border-left: .1rem solid rgba(255, 255, 255, 0.489);
+    box-shadow: 0 0 2rem black;
+    text-shadow: -.1rem -.2rem .1rem rgb(0, 0, 0);
 }
 
-.movie-size >p{
-    margin-left:1rem;
+.movie-size>p {
+    margin-left: 1rem;
     font-weight: 100;
-    
-    text-shadow:-.1rem -.2rem .1rem black;
+
+    text-shadow: -.1rem -.2rem .1rem black;
 }
 
 /* --------------------------------------------Disc Section--------------------------------------------  */
 .detail-page-card-disc {
     margin-top: 1rem;
 }
-.detail-page-card-title{
+
+.detail-page-card-title {
     font-size: 1.5rem;
     text-align: center;
-    color:wheat;
+    color: wheat;
     text-transform: capitalize;
 }
-.detail-page-card-title h2{
-    margin-bottom:.7rem;
+
+.detail-page-card-title h2 {
+    margin-bottom: .7rem;
 }
-.detail-page-download-btn{
-    height:8rem;
+
+.detail-page-download-btn {
+    height: 8rem;
 }
+
 .detail-page-download-btn a {
     font-size: 2rem;
     background-image: linear-gradient(45deg, rgb(249, 6, 62), rgb(255, 124, 124));
     padding: 1rem 2rem;
     font-weight: bold;
     text-align: center;
-    border-radius:5rem;
-    color:white;    
+    border-radius: 5rem;
+    color: white;
 }
+
 .detail-page-download-btn a:hover {
     background-image: linear-gradient(45deg, rgb(255, 185, 124), rgb(255, 44, 44));
 }
-.lang p{
-   margin:0 .5rem;
-   color:salmon;
-}
-.lang h4{
-   margin-right:1rem;
-}
-.hr-line{
-    width:50%;
-    height:.2rem;
-    margin:1rem 25% 0 25%;
-    border:0;
-    border-radius:5rem;
-    background:white;
+
+.lang p {
+    margin: 0 .5rem;
+    color: salmon;
+    font-size: 2REM;
 }
 
+.lang h2 {
+    margin-right: 1rem;
+    color:white;
+    font-weight: bold;
+}
+
+.hr-line {
+    width: 50%;
+    height: .2rem;
+    margin: 1rem 25% 0 25%;
+    border: 0;
+    border-radius: 5rem;
+    background: white;
+}
 
 
 
 
 
-@media screen and (max-width:820px){
-    .detail-page-container{
+
+@media screen and (max-width:820px) {
+    .detail-page-container {
         width: 100%;
-        height:fit-content;
+        height: fit-content;
     }
+
     .detail-page-card {
         width: 96%;
         height: fit-content;
     }
-    .detail-page-card-genere{
+
+    .detail-page-card-genere {
         flex-wrap: wrap;
-        gap:1rem;
-        height: fit-content ;
+        gap: 1rem;
+        height: fit-content;
     }
-    .detail-page-card-genere p{
+
+    .detail-page-card-genere p {
         flex-wrap: wrap;
     }
-    .detail-page-card-image >img {
+
+    .detail-page-card-image>img {
         height: 37rem;
         width: 90%;
 
     }
-    .movie-size{
-        top:1.5rem;
-        left:5rem;
+
+    .movie-size {
+        top: 1.5rem;
+        left: 5rem;
     }
 }
 
-@media screen and (max-width:500px){
-    .detail-page-card-image >img {
+@media screen and (max-width:500px) {
+    .detail-page-card-image>img {
         height: 35rem;
         width: 98%;
     }
-    .movie-size{
-        top:3rem;
-        left:2rem;
+
+    .movie-size {
+        top: 3rem;
+        left: 2rem;
         font-size: 1.5rem;
     }
-    .hr-line{
-        width:80%;
-        margin:1rem 10% 0 10%;
+
+    .hr-line {
+        width: 80%;
+        margin: 1rem 10% 0 10%;
     }
-    .lang{
+
+    .lang {
         flex-wrap: wrap;
     }
+
     .detail-page-download-btn a {
         font-size: 1.8rem;
     }
 }
 
-@media screen and (max-width:200px){
+@media screen and (max-width:200px) {
     .detail-page-card-image {
         height: 20rem;
     }
-    .detail-page-card-image >img {
+
+    .detail-page-card-image>img {
         height: 100%;
         width: 98%;
     }
-    .movie-size{
-        height:2rem;
-        top:0rem;
-        left:0; 
+
+    .movie-size {
+        height: 2rem;
+        top: 0rem;
+        left: 0;
         text-align: center;
         font-size: 1rem;
     }
-    .lang{
+
+    .lang {
         font-size: 1.4rem;
     }
-    .detail-page-download-btn{
-        height:fit-content;
-        margin:1rem 0;
+
+    .detail-page-download-btn {
+        height: fit-content;
+        margin: 1rem 0;
     }
+
     .detail-page-download-btn a {
         font-size: 1.2rem;
         padding: .5rem 1rem;
     }
+
     .genere-card {
         height: fit-content;
         margin: 0 .1rem;
-        padding:.5rem 1rem;
+        padding: .5rem 1rem;
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width:90px){
+@media screen and (max-width:90px) {
 
     .detail-page-card-title {
         font-size: .9rem;
     }
+
     .detail-page-card-image {
         height: 20rem;
     }
-    .detail-page-card-image >img {
+
+    .detail-page-card-image>img {
         height: 100%;
         width: 98%;
     }
-    .movie-size{
-        height:2rem;
+
+    .movie-size {
+        height: 2rem;
         text-align: center;
         font-size: .5rem;
     }
-    .lang{
+
+    .lang {
         font-size: .9rem;
     }
+
     .detail-page-download-btn a {
         font-size: 1rem;
         padding: .5rem;
         border-radius: 0;
     }
+
     .genere-card {
         height: fit-content;
         margin: 0 .1rem;
-        padding:.5rem 1rem;
+        padding: .5rem 1rem;
         font-size: 1rem;
     }
 }

@@ -1,0 +1,34 @@
+.genere-card {
+    height: 2.7rem;
+    width: fit-content;
+    background: maroon;
+    transform: skew(-30deg);
+    border-radius: .5rem;
+    margin: 0 .5rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genere-card p {
+    transform: skew(30deg);
+    text-transform: capitalize;
+
+}
+
+.genere-card:hover {
+    background: rgb(255, 255, 255);
+    color: maroon;
+    transition: .3s;
+}
+.genere-card p::selection {
+    background: transparent;
+    COLOR:WHITE;
+
+}

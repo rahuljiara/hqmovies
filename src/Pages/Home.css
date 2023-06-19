@@ -1,11 +1,16 @@
-.movies-container {
+
+.movie-page{
     position: absolute;
     top: 7rem;
+    width: 100%;
+}
+.movies-container {
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: center;
     width: 100%;
     z-index: 1;
+    margin-top: 5rem;
 }
 
 .movies-card {

@@ -1,0 +1,40 @@
+.movie-filter-container{
+    position: absolute;
+    top:6rem;
+    height:4rem;
+    width:100%;
+    background-color: bisque;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    font-size:1.8rem;
+    font-weight: bold;
+    
+}
+.movie-filter-container i{
+    margin-left:.5rem;
+}
+
+.filter-heading{
+    background-color: white;
+    height:3rem;
+    padding:0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:.5rem;
+    cursor: pointer;
+
+}
+.filter-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    margin:1rem;
+}
